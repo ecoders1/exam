@@ -1,0 +1,21 @@
+{
+  "name": "Exit Exam App",
+  "short_name": "ExitExam",
+  "description": "Ethiopian University Exit Exam Preparation App - Prepare • Practice • Pass",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1d4ed8",
+  "theme_color": "#1d4ed8",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/globe.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "lang": "en-ET",
+  "dir": "ltr"
+}

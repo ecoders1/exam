@@ -1,0 +1,253 @@
+// App Constants
+export const APP_NAME = "EXIT EXAM APP";
+export const APP_TAGLINE = "Prepare • Practice • Pass";
+export const APP_VERSION = "1.0.0";
+
+// Ethiopian Universities
+export const ETHIOPIAN_UNIVERSITIES = [
+  "Addis Ababa University",
+  "Adama Science and Technology University",
+  "Jimma University",
+  "Bahir Dar University",
+  "Haramaya University",
+  "Hawassa University",
+  "Rift Valley University",
+  "Ambo University",
+  "Wollega University",
+  "Arsi University",
+  "Dilla University",
+  "Debre Berhan University",
+  "Mekelle University",
+  "Gondar University",
+  "Wollo University",
+  "Dire Dawa University",
+  "Aksum University",
+  "Madda Walabu University",
+  "Wolaita Sodo University",
+  "Samara University",
+  "Debre Markos University",
+  "Assosa University",
+  "Jijiga University",
+  "Bule Hora University",
+  "Mizan-Tepi University",
+  "Wachemo University",
+  "Injibara University",
+  "Mettu University",
+  "Gambella University",
+  "Wolkite University",
+  "Bonga University",
+  "Kebri Dehar University",
+  "Oda Bultum University",
+  "Debre Tabor University",
+  "Woldia University",
+  "Semera University",
+  "Kotebe Metropolitan University",
+  "Ethiopian Civil Service University",
+  "St. Mary's University",
+  "Unity University",
+  "Addis Ababa Science and Technology University",
+  "Addis Ababa Medical University",
+  "Black Lion Hospital Medical School",
+  "Tikur Anbessa Specialized Hospital",
+] as const;
+
+// Departments
+export const DEPARTMENTS = [
+  "Computer Science",
+  "Information Technology",
+  "Software Engineering",
+  "Electrical Engineering",
+  "Civil Engineering",
+  "Mechanical Engineering",
+  "Chemical Engineering",
+  "Industrial Engineering",
+  "Medicine",
+  "Nursing",
+  "Pharmacy",
+  "Public Health",
+  "Health Sciences",
+  "Dentistry",
+  "Medical Laboratory Sciences",
+  "Accounting",
+  "Management",
+  "Economics",
+  "Business Administration",
+  "Finance",
+  "Marketing",
+  "Law",
+  "Political Science",
+  "Sociology",
+  "Psychology",
+  "Social Work",
+  "Mathematics",
+  "Statistics",
+  "Physics",
+  "Chemistry",
+  "Biology",
+  "Agriculture",
+  "Agronomy",
+  "Animal Science",
+  "Natural Resource Management",
+  "Forestry",
+  "Environmental Science",
+  "Teacher Education",
+  "Curriculum and Instruction",
+  "Educational Psychology",
+  "History",
+  "Geography",
+  "Linguistics",
+  "Literature",
+  "Journalism",
+  "Architecture",
+  "Urban Planning",
+  "Hydraulic Engineering",
+  "Water Supply Engineering",
+  "General Knowledge",
+  "English",
+] as const;
+
+// Subject categories with icons and colors
+export const SUBJECT_CATEGORIES = [
+  { id: "general-knowledge", name: "General Knowledge", icon: "BookOpen", color: "bg-blue-500", gradient: "from-blue-500 to-blue-700" },
+  { id: "english", name: "English", icon: "Languages", color: "bg-purple-500", gradient: "from-purple-500 to-purple-700" },
+  { id: "mathematics", name: "Mathematics", icon: "Calculator", color: "bg-green-500", gradient: "from-green-500 to-green-700" },
+  { id: "computer-science", name: "Computer Science", icon: "Monitor", color: "bg-cyan-500", gradient: "from-cyan-500 to-cyan-700" },
+  { id: "economics", name: "Economics", icon: "TrendingUp", color: "bg-yellow-500", gradient: "from-yellow-500 to-yellow-700" },
+  { id: "nursing", name: "Nursing", icon: "Heart", color: "bg-pink-500", gradient: "from-pink-500 to-pink-700" },
+  { id: "medicine", name: "Medicine", icon: "Stethoscope", color: "bg-red-500", gradient: "from-red-500 to-red-700" },
+  { id: "engineering", name: "Engineering", icon: "Wrench", color: "bg-orange-500", gradient: "from-orange-500 to-orange-700" },
+  { id: "law", name: "Law", icon: "Scale", color: "bg-slate-500", gradient: "from-slate-500 to-slate-700" },
+  { id: "accounting", name: "Accounting", icon: "DollarSign", color: "bg-emerald-500", gradient: "from-emerald-500 to-emerald-700" },
+  { id: "management", name: "Management", icon: "Users", color: "bg-indigo-500", gradient: "from-indigo-500 to-indigo-700" },
+  { id: "agriculture", name: "Agriculture", icon: "Leaf", color: "bg-lime-500", gradient: "from-lime-500 to-lime-700" },
+  { id: "health-sciences", name: "Health Sciences", icon: "Activity", color: "bg-teal-500", gradient: "from-teal-500 to-teal-700" },
+  { id: "information-technology", name: "Information Technology", icon: "Cpu", color: "bg-violet-500", gradient: "from-violet-500 to-violet-700" },
+  { id: "teacher-education", name: "Teacher Education", icon: "GraduationCap", color: "bg-amber-500", gradient: "from-amber-500 to-amber-700" },
+  { id: "physics", name: "Physics", icon: "Zap", color: "bg-sky-500", gradient: "from-sky-500 to-sky-700" },
+  { id: "chemistry", name: "Chemistry", icon: "FlaskConical", color: "bg-fuchsia-500", gradient: "from-fuchsia-500 to-fuchsia-700" },
+  { id: "biology", name: "Biology", icon: "Dna", color: "bg-green-600", gradient: "from-green-600 to-green-800" },
+] as const;
+
+// Difficulty levels
+export const DIFFICULTY_LEVELS = ["Easy", "Medium", "Hard"] as const;
+
+// Exam types
+export const EXAM_TYPES = [
+  { id: "university-exit", name: "University Exit Exam", duration: 180, questions: 100 },
+  { id: "departmental-exit", name: "Departmental Exit Exam", duration: 120, questions: 75 },
+  { id: "national-exit", name: "National Exit Exam", duration: 240, questions: 150 },
+] as const;
+
+// Navigation items
+export const NAV_ITEMS = [
+  { id: "home", label: "Home", icon: "Home", href: "/dashboard" },
+  { id: "practice", label: "Practice", icon: "BookOpen", href: "/practice" },
+  { id: "mock-test", label: "Mock Test", icon: "ClipboardList", href: "/mock-test" },
+  { id: "results", label: "Results", icon: "BarChart2", href: "/results" },
+  { id: "profile", label: "Profile", icon: "User", href: "/profile" },
+] as const;
+
+// Grade thresholds
+export const GRADE_THRESHOLDS = {
+  PASS: 50,
+  MERIT: 65,
+  DISTINCTION: 75,
+  HIGH_DISTINCTION: 85,
+} as const;
+
+// Sample mock questions for demonstration
+export const SAMPLE_QUESTIONS = [
+  {
+    id: "1",
+    subject: "computer-science",
+    topic: "Data Structures",
+    chapter: "Chapter 1",
+    difficulty: "Medium" as const,
+    question: "Which data structure uses LIFO (Last In First Out) principle?",
+    options: ["Queue", "Stack", "Array", "Linked List"],
+    correctAnswer: 1,
+    explanation: "A Stack uses the LIFO principle where the last element inserted is the first one to be removed.",
+  },
+  {
+    id: "2",
+    subject: "mathematics",
+    topic: "Calculus",
+    chapter: "Chapter 3",
+    difficulty: "Hard" as const,
+    question: "What is the derivative of f(x) = 3x² + 2x - 5?",
+    options: ["6x + 2", "3x + 2", "6x - 5", "3x² + 2"],
+    correctAnswer: 0,
+    explanation: "Using the power rule: d/dx(3x²) = 6x, d/dx(2x) = 2, d/dx(-5) = 0. So f'(x) = 6x + 2.",
+  },
+  {
+    id: "3",
+    subject: "english",
+    topic: "Grammar",
+    chapter: "Chapter 2",
+    difficulty: "Easy" as const,
+    question: "Which sentence is grammatically correct?",
+    options: [
+      "She don't know the answer.",
+      "She doesn't know the answer.",
+      "She not knowing the answer.",
+      "She didn't knew the answer.",
+    ],
+    correctAnswer: 1,
+    explanation: "The correct form uses 'doesn't' (does not) with the base form of the verb for third person singular.",
+  },
+  {
+    id: "4",
+    subject: "economics",
+    topic: "Microeconomics",
+    chapter: "Chapter 1",
+    difficulty: "Medium" as const,
+    question: "The law of demand states that, all other things being equal:",
+    options: [
+      "As price increases, quantity demanded increases",
+      "As price decreases, quantity demanded decreases",
+      "As price increases, quantity demanded decreases",
+      "Price and quantity demanded are unrelated",
+    ],
+    correctAnswer: 2,
+    explanation: "The law of demand states there is an inverse relationship between price and quantity demanded, ceteris paribus.",
+  },
+  {
+    id: "5",
+    subject: "nursing",
+    topic: "Patient Care",
+    chapter: "Chapter 4",
+    difficulty: "Medium" as const,
+    question: "What is the normal range for adult resting heart rate?",
+    options: ["40-60 bpm", "60-100 bpm", "100-120 bpm", "120-140 bpm"],
+    correctAnswer: 1,
+    explanation: "The normal resting heart rate for adults is 60-100 beats per minute (bpm).",
+  },
+];
+
+// Announcements data
+export const SAMPLE_ANNOUNCEMENTS = [
+  {
+    id: "1",
+    title: "2024 Exit Exam Registration Open",
+    content: "Registration for the 2024 Ethiopian University Exit Exam is now open. Deadline: March 15, 2024.",
+    date: "2024-01-15",
+    type: "exam" as const,
+    priority: "high" as const,
+  },
+  {
+    id: "2",
+    title: "New Study Materials Added",
+    content: "New practice questions for Computer Science and Engineering departments have been added.",
+    date: "2024-01-10",
+    type: "update" as const,
+    priority: "medium" as const,
+  },
+  {
+    id: "3",
+    title: "System Maintenance",
+    content: "Scheduled maintenance on Sunday, January 21st from 2:00 AM - 4:00 AM.",
+    date: "2024-01-08",
+    type: "system" as const,
+    priority: "low" as const,
+  },
+];
